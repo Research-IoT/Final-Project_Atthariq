@@ -14,7 +14,7 @@ class WelcomeController extends Controller
     {
         $data = [
             'name' => 'Application ' . env('APP_NAME'),
-            'documantion' => env('APP_URL') . '/docs/api'
+            'documentation' => env('APP_URL') . '/docs/api'
         ];
 
         return Response::success($data);
