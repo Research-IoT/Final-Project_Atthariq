@@ -16,7 +16,6 @@ return new class extends Migration
             $table->foreignId('id_consumen')->constrained('consumen')->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('id_device')->constrained('devices')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamp('added_at');
-            $table->softDeletes();
         });
     }
 

@@ -20,8 +20,6 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('token')->nullable();
             $table->timestamp('expired_at')->nullable();
-            $table->string('created_by')->nullable();
-            $table->string('updated_by')->nullable();
             $table->timestamps();
         });
     }

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('serial_catalog');
             $table->string('serial_number')->unique();
             $table->string('token')->nullable();
+            $table->string('modified_by')->nullable();
             $table->timestamp('modified_at')->nullable();
         });
     }
